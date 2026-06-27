@@ -1,8 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 
 const SURL = "https://pdllrsezowkvhdufoowl.supabase.co";
-const SKEY = "sb_publishable_flo0bbWwp5HpuAR8Oo14sw_VE5RgkqB";
-
+const SKEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBkbGxyc2V6b3drdmhkdWZvb3dsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI1MDc5MTEsImV4cCI6MjA5ODA4MzkxMX0.o6QU5BVk3kjWNpbefwo5QBlIr_sNfxVISW3XmkZKJLM";
 const api = async (path, method = "GET", body = null) => {
   const headers = {
     "apikey": SKEY,
